@@ -11,7 +11,7 @@ type myHandler struct {
 }
 
 func (mh myHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-	w.Write([]byte(fmt.Sprintf("%v world", mh.greeting)))
+	w.Write([]byte(fmt.Sprintf("%v world!!", mh.greeting)))
 }
 
 func main() {
